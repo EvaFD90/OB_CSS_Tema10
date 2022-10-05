@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 1.5rem;
+}
+
+.sidebar {
+    display: flex;
+    background-color: #FC6DAB;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    background-color: #F7F6C5;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 640px){
+    body {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
